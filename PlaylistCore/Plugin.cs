@@ -5,6 +5,7 @@ using IPALogger = IPA.Logging.Logger;
 using HarmonyLib;
 using System.Reflection;
 using BeatSaberPlaylistsLib;
+using UnityEngine;
 
 namespace PlaylistCore
 {
@@ -23,6 +24,8 @@ namespace PlaylistCore
             Log = logger;
 
             _harmony = new Harmony("dev.auros.playlistcore");
+            BeatSaberPlaylistsLib.Types.Playlist.DefaultCoverImage = Utilities.groupIcon;
+            BeatSaberPlaylistsLib.Types.Playlist.LoadWait = new WaitForSeconds(2);
         }
 
         [OnEnable]

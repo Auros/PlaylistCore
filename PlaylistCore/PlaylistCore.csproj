@@ -126,6 +126,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HarmonyPatches\AnnotatedBeatmapLevelCollectionTableCell_SetData.cs" />
     <Compile Include="HarmonyPatches\LevelFilteringNavigationController_InitializeTabBarViewController.cs" />
     <Compile Include="HarmonyPatches\AnnotatedBeatmapLevelCollectionsTableView_HandleDidSelectColumnEvent.cs" />
     <Compile Include="Overrides\CustomPlaylist.cs" />
