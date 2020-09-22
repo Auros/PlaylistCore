@@ -1,11 +1,9 @@
 ﻿using IPA;
-using PlaylistCore.UI;
+using HarmonyLib;
+using UnityEngine;
+using System.Reflection;
 using BS_Utils.Utilities;
 using IPALogger = IPA.Logging.Logger;
-using HarmonyLib;
-using System.Reflection;
-using BeatSaberPlaylistsLib;
-using UnityEngine;
 
 namespace PlaylistCore
 {
