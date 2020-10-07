@@ -38,7 +38,7 @@ namespace PlaylistCore.Overrides
             }
         }
 
-        public Sprite coverImage => Utilities.groupIcon;
+        public Sprite coverImage => BeatSaberPlaylistsLib.Utilities.DefaultSprite;
 
         private IBeatmapLevelCollection _beatmapLevelCollection;
         public IBeatmapLevelCollection beatmapLevelCollection

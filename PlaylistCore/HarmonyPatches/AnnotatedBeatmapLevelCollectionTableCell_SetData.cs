@@ -7,7 +7,7 @@ using System.Runtime.CompilerServices;
 
 namespace PlaylistCore.HarmonyPatches
 {
-    [HarmonyPatch(typeof(AnnotatedBeatmapLevelCollectionTableCell), nameof(AnnotatedBeatmapLevelCollectionTableCell.SetData)]
+    [HarmonyPatch(typeof(AnnotatedBeatmapLevelCollectionTableCell), nameof(AnnotatedBeatmapLevelCollectionTableCell.SetData))]
     public class AnnotatedBeatmapLevelCollectionTableCell_SetData
     {
         public static readonly ConditionalWeakTable<IDeferredSpriteLoad, AnnotatedBeatmapLevelCollectionTableCell> EventTable = new ConditionalWeakTable<IDeferredSpriteLoad, AnnotatedBeatmapLevelCollectionTableCell>();
